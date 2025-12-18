@@ -1,0 +1,39 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#374151"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Logo Container -->
+  <g transform="translate(400, 165)">
+    <!-- Phone Icon Background -->
+    <rect x="0" y="0" width="120" height="120" rx="24" fill="url(#phone)"/>
+    
+    <!-- Phone Icon -->
+    <rect x="35" y="25" width="50" height="70" rx="6" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <rect x="40" y="35" width="40" height="50" rx="2" fill="#ffffff" fill-opacity="0.15"/>
+    <circle cx="60" cy="85" r="3" fill="#ffffff"/>
+    
+    <!-- Text -->
+    <text x="180" y="50" font-family="Inter, sans-serif" font-size="48" font-weight="600" fill="#1a1a1a">Ui</text>
+    <text x="180" y="80" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#1a1a1a" letter-spacing="4">LOOKER</text>
+  </g>
+  
+  <!-- Tagline -->
+  <text x="600" y="400" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#64748b" text-anchor="middle">Test Your Site Across All Devices</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="150" r="40" fill="#3b82f6" fill-opacity="0.1"/>
+  <circle cx="1050" cy="480" r="60" fill="#10b981" fill-opacity="0.1"/>
+  <rect x="100" y="500" width="80" height="80" rx="16" fill="#8b5cf6" fill-opacity="0.1"/>
+  <rect x="1000" y="100" width="100" height="100" rx="20" fill="#f59e0b" fill-opacity="0.1"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1a1a1a"/>
+  
+  <!-- Phone Icon -->
+  <rect x="11" y="8" width="10" height="16" rx="1.5" fill="none" stroke="#ffffff" stroke-width="1"/>
+  <rect x="12" y="10" width="8" height="11" rx="0.5" fill="#ffffff" fill-opacity="0.2"/>
+  <circle cx="16" cy="22.5" r="1" fill="#ffffff"/>
+</svg>

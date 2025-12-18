@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiLooker - Free Responsive Design Testing Tool | Test Your Website Across All Devices</title>
+    <meta name="description" content="UiLooker by Dhanraj D. Hasure - Free responsive design testing tool. Instantly preview your website on mobile, tablet, and desktop. No sign-up required. Test 50+ device presets with zero loading time.">
+    <meta name="keywords" content="UiLooker, responsive design testing, mobile preview, device testing, web development tools, Dhanraj D Hasure, DDH, free website testing, cross-device testing, responsive web design, mobile-first design, viewport testing">
+    <meta name="author" content="Dhanraj D Hasure">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://uilooker.github.io/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UiLooker">
+    <meta property="og:title" content="UiLooker - Free Responsive Design Testing Tool">
+    <meta property="og:description" content="Test your website across all devices instantly. Free responsive design testing tool by Dhanraj D Hasure with 50+ device presets and zero loading time.">
+    <meta property="og:image" content="https://uilooker.github.io/logo-social.png">
+    <meta property="og:image:alt" content="UiLooker - Responsive Design Testing Tool">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://uilooker.github.io/">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@uilooker">
+    <meta name="twitter:creator" content="@dhanrajhasure">
+    <meta name="twitter:title" content="UiLooker - Free Responsive Design Testing Tool">
+    <meta name="twitter:description" content="Test your website across all devices instantly. Free responsive design testing tool with 50+ device presets.">
+    <meta name="twitter:image" content="https://uilooker.github.io/logo-social.png">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
+    <meta name="application-name" content="UiLooker">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "UiLooker",
+      "description": "Free responsive design testing tool to preview websites across all devices",
+      "url": "https://uilooker.github.io/",
+      "author": {
+        "@type": "Person",
+        "name": "Dhanraj D Hasure",
+        "url": "https://resumeofddh.netlify.app/"
+      },
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <span class="logo-text">
+                        <span class="logo-main">Ui</span>
+                        <span class="logo-sub">LOOKER</span>
+                    </span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="help.html" class="nav-link">Help</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Preview Your Website on <span class="gradient-text">Every Device</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Instantly check how your website looks on mobile, tablet & desktop.
+                    </p>
+
+                    <div class="url-input-container">
+                        <div class="input-wrapper">
+                            <i class="bi bi-link-45deg input-icon"></i>
+                            <input type="url" id="websiteUrl" placeholder="Paste your website URL (https://example.com)"
+                                class="url-input">
+                            <button id="testBtn" class="test-btn">
+                                <span>Preview Now</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <button class="quick-btn" data-url="https://sqlus.netlify.app">
+                            <i class="bi bi-database"></i> Try SQLus
+                        </button>
+                        <button class="quick-btn" data-url="https://resumeofddh.netlify.app">
+                            <i class="bi bi-file-code"></i> Try Portfolio
+                        </button>
+                        <button class="quick-btn" data-url="https://fastcollab.com">
+                            <i class="bi bi-people"></i> Try Corporate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Revolutionary Features Showcase -->
+    <section class="features-showcase">
+        <div class="container">
+            <div class="showcase-header">
+                <span class="feature-badge">Lightning Fast Performance</span>
+                <h2>Instant Responsive Design Testing</h2>
+                <p>Experience real-time website previews across all devices with zero loading time. 
+                </p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center"
+                            alt="Lightning Fast Performance" />
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Zero Loading Time</h3>
+                        <p>Our advanced rendering engine delivers instant results across all device types. No waiting,
+                            no delays - just immediate responsive design feedback for your development workflow.</p>
+                        <ul class="feature-list">
+                            <li>0.2s Average Load Time</li>
+                            <li>Real-time Preview Updates</li>
+                            <li>Instant Device Switching</li>
+                            <li>Live CSS Debugging</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="showcase-item reverse">
+                    <div class="showcase-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
+                            alt="Comprehensive Device Library" />
+                    </div>
+                    <div class="showcase-content">
+                        <h3>50+ Device Presets</h3>
+                        <p>Test your responsive designs on an extensive library of real device dimensions. From the
+                            latest smartphones to ultra-wide monitors, ensure perfect compatibility everywhere.</p>
+                        <ul class="feature-list">
+                            <li>Latest Mobile Devices</li>
+                            <li>Tablet & Hybrid Screens</li>
+                            <li>Desktop & Widescreen</li>
+                            <li>Custom Viewport Sizes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=center"
+                            alt="Professional Workflow" />
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Agile Development Ready</h3>
+                        <p>Perfect for modern development workflows and rapid prototyping. Integrate seamlessly with
+                            your existing tools and processes for maximum productivity.</p>
+                        <ul class="feature-list">
+                            <li>CI/CD Integration</li>
+                            <li>Screenshot Export</li>
+                            <li>Team Collaboration</li>
+                            <li>API Access Available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immersive Device Testing -->
+    <section class="device-gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2>Test on Every Device Imaginable</h2>
+                <p>From the latest iPhone to ultra-wide monitors, ensure your website looks perfect everywhere</p>
+            </div>
+            <div class="device-grid">
+                <div class="device-showcase mobile">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&crop=center"
+                        alt="Mobile Device Testing" />
+                    <div class="device-info">
+                        <h3>Mobile First Design</h3>
+                        <p>Test responsive breakpoints on smartphones and tablets with pixel-perfect accuracy</p>
+                    </div>
+                </div>
+                <div class="device-showcase desktop">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center"
+                        alt="Desktop Testing" />
+                    <div class="device-info">
+                        <h3>Desktop & Widescreen</h3>
+                        <p>Validate layouts on large screens and ultra-wide monitors for professional presentations</p>
+                    </div>
+                </div>
+                <div class="device-showcase tablet">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&crop=center"
+                        alt="Tablet Testing" />
+                    <div class="device-info">
+                        <h3>Tablet Optimization</h3>
+                        <p>Perfect your designs for iPad, Android tablets, and hybrid devices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Workflow Integration -->
+    <section class="workflow-section">
+        <div class="workflow-background">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&h=1080&fit=crop&crop=center"
+                alt="Developer Workflow" class="bg-image" />
+            <div class="overlay"></div>
+        </div>
+        <div class="container">
+            <div class="workflow-content">
+                <div class="workflow-header">
+                    <h2>Seamless Developer Workflow</h2>
+                    <p>Integrate UiLooker into your development process with our streamlined three-step workflow</p>
+                </div>
+                <div class="workflow-steps">
+                    <div class="step-flow">
+                        <div class="step-visual">
+                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=400&h=300&fit=crop&crop=center"
+                                alt="URL Input" />
+                            <div class="step-number">01</div>
+                        </div>
+                        <div class="step-details">
+                            <h3>Paste & Preview</h3>
+                            <p>Simply enter your website URL and watch as UiLooker instantly loads your site for
+                                comprehensive responsive testing</p>
+                        </div>
+                    </div>
+                    <div class="step-flow">
+                        <div class="step-visual">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&crop=center"
+                                alt="Device Selection" />
+                            <div class="step-number">02</div>
+                        </div>
+                        <div class="step-details">
+                            <h3>Select Devices</h3>
+                            <p>Choose from our extensive library of real device dimensions, or create custom viewport
+                                sizes for specific testing scenarios</p>
+                        </div>
+                    </div>
+                    <div class="step-flow">
+                        <div class="step-visual">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop&crop=center"
+                                alt="Export Results" />
+                            <div class="step-number">03</div>
+                        </div>
+                        <div class="step-details">
+                            <h3>Export & Share</h3>
+                            <p>Capture high-quality screenshots, generate reports, and share results with your team or
+                                clients instantly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Use Cases -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="use-cases-header">
+                <h2>Trusted by Professionals Worldwide</h2>
+                <p>From startups to enterprise teams, UiLooker powers responsive design workflows across the industry
+                </p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case frontend">
+                    <div class="use-case-image">
+                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=600&h=400&fit=crop&crop=center"
+                            alt="Frontend Development" />
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Frontend Development Teams</h3>
+                        <p>Streamline your CSS media query testing, validate responsive breakpoints, and ensure
+                            cross-browser compatibility with our comprehensive testing suite. Perfect for React, Vue,
+                            Angular, and vanilla JavaScript projects.</p>
+                        <ul class="feature-list">
+                            <li>CSS Grid & Flexbox Testing</li>
+                            <li>Media Query Validation</li>
+                            <li>Cross-Browser Compatibility</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="use-case design">
+                    <div class="use-case-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop&crop=center"
+                            alt="UI/UX Design" />
+                    </div>
+                    <div class="use-case-content">
+                        <h3>UI/UX Design Studios</h3>
+                        <p>Validate your design concepts across all screen sizes, test user interface elements, and
+                            ensure consistent user experiences. Integrate seamlessly with Figma, Sketch, and Adobe XD
+                            workflows.</p>
+                        <ul class="feature-list">
+                            <li>Design System Validation</li>
+                            <li>User Experience Testing</li>
+                            <li>Accessibility Compliance</li>
+                            <li>Client Presentation Tools</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="use-case agency">
+                    <div class="use-case-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&crop=center"
+                            alt="Digital Agencies" />
+                    </div>
+                    <div class="use-case-content">
+                        <h3>Digital Agencies & Freelancers</h3>
+                        <p>Deliver professional client presentations with device mockups, generate comprehensive testing
+                            reports, and streamline your quality assurance process for faster project delivery.</p>
+                        <ul class="feature-list">
+                            <li>Client Presentation Mode</li>
+                            <li>Automated Report Generation</li>
+                            <li>Team Collaboration Tools</li>
+                            <li>White-Label Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <span class="logo-text">
+                            <span class="logo-main">Ui</span>
+                            <span class="logo-sub">LOOKER</span>
+                        </span>
+                    </div>
+                    <p>The ultimate tool for responsive design testing.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="help.html">Help</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/dhanrajdhasure7143" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/dhanraj-d-hasure" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:sqlus@gmail.com"><i class="bi bi-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UiLooker by <a href="https://resumeofddh.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #6366f1; text-decoration: none;">Dhanraj D Hasure</a>. Built with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

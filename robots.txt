@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://uilooker.github.io/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow specific files
+Disallow: /js/
+Disallow: /styles/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /help.html
+Allow: /viewer.html

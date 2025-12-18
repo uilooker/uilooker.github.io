@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiLooker Viewer - Live Responsive Design Testing Tool | Preview Any Website</title>
+    <meta name="description" content="UiLooker Viewer by Dhanraj D Hasure - Live responsive design testing tool. Preview any website across desktop, tablet, and mobile devices in real-time. Free online viewport testing with drag functionality and smart scaling.">
+    <meta name="keywords" content="UiLooker viewer, responsive design testing, live website preview, mobile testing tool, viewport testing, cross-device testing, Dhanraj D Hasure, Dhanraj D. Hasure, DDH, responsive web design checker, device mockup, website testing tool">
+    <meta name="author" content="Dhanraj D Hasure">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://uilooker.github.io/viewer.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UiLooker">
+    <meta property="og:title" content="UiLooker Viewer - Live Responsive Design Testing Tool">
+    <meta property="og:description" content="Preview any website across desktop, tablet, and mobile devices in real-time. Free responsive design testing tool with live viewport testing and device mockups.">
+    <meta property="og:image" content="https://uilooker.github.io/logo-social.png">
+    <meta property="og:image:alt" content="UiLooker Viewer - Live Website Testing">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://uilooker.github.io/viewer.html">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@uilooker">
+    <meta name="twitter:creator" content="@dhanrajhasure">
+    <meta name="twitter:title" content="UiLooker Viewer - Live Responsive Design Testing">
+    <meta name="twitter:description" content="Preview any website across desktop, tablet, and mobile devices in real-time. Free responsive design testing tool.">
+    <meta name="twitter:image" content="https://uilooker.github.io/logo-social.png">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
+    <meta name="application-name" content="UiLooker Viewer">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "UiLooker Viewer",
+      "description": "Live responsive design testing tool to preview websites across all devices in real-time",
+      "url": "https://uilooker.github.io/viewer.html",
+      "author": {
+        "@type": "Person",
+        "name": "Dhanraj D Hasure",
+        "url": "https://resumeofddh.netlify.app/"
+      },
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Live website preview",
+        "Responsive design testing",
+        "Multiple device viewports",
+        "Real-time scaling",
+        "Drag functionality",
+        "Screenshot capture",
+        "Cross-device compatibility testing"
+      ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/viewer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body class="viewer-body">
+    <!-- Header -->
+    <header class="viewer-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <span class="logo-text">
+                            <span class="logo-main">Ui</span>
+                            <span class="logo-sub">LOOKER</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="page-title">
+                    
+                </div>
+            </div>
+            
+            <div class="header-center">
+                <div class="url-input-section">
+                    <input type="url" id="urlInput" class="url-input-field" placeholder="Enter website URL..." value="">
+                    <button id="goBtn" class="go-btn">GO</button>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div class="device-size-display">
+                    <span id="deviceWidth">1366</span>
+                    <span class="size-separator">X</span>
+                    <span id="deviceHeight">1024</span>
+                </div>
+                <div id="zoomIndicator" class="zoom-indicator" style="display: none;">
+                    <span id="zoomPercentage">100%</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+        <div class="sidebar-content">
+            <button id="menuToggle" class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="menu-text">MENU</span>
+            </button>
+            
+            <div class="device-icons">
+                <button class="device-icon active" data-width="1366" data-height="1024" data-name="Desktop" title="Desktop">
+                    <i class="bi bi-display"></i>
+                </button>
+                <button class="device-icon" data-width="768" data-height="1024" data-name="Tablet" title="Tablet">
+                    <i class="bi bi-tablet"></i>
+                </button>
+                <button class="device-icon" data-width="375" data-height="667" data-name="Mobile" title="Mobile">
+                    <i class="bi bi-phone"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-actions">
+                <button id="fitToScreenBtn" class="action-icon" title="Smart Fit">
+                    <i class="bi bi-arrows-angle-contract"></i>
+                </button>
+                <button id="dragToggleBtn" class="action-icon" title="Drag to Pan (Auto)" disabled>
+                    <i class="bi bi-arrows-move"></i>
+                </button>
+                <button id="zoomOutBtn" class="action-icon" title="Zoom Out">
+                    <i class="bi bi-dash"></i>
+                </button>
+                <button id="zoomInBtn" class="action-icon" title="Zoom In">
+                    <i class="bi bi-plus"></i>
+                </button>
+                <button id="shareBtn" class="action-icon" title="Share">
+                    <i class="bi bi-share"></i>
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Floating Decorative Elements -->
+        <div class="floating-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+        </div>
+        
+        <div class="content-wrapper">
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state">
+                <div class="loading-animation">
+                    <div class="loading-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <h3>Loading Website...</h3>
+                <p>Please wait while we load your website</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorState" class="error-state" style="display: none;">
+                <div class="error-icon">
+                    <i class="bi bi-exclamation-triangle"></i>
+                </div>
+                <h3>Unable to Load Website</h3>
+                <p id="errorMessage">This website cannot be displayed due to security restrictions.</p>
+                <div class="error-actions">
+                    <button id="retryBtn" class="retry-btn">
+                        <i class="bi bi-arrow-clockwise"></i>
+                        Try Again
+                    </button>
+                    <button id="openExternalBtn" class="external-btn">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                        Open in New Tab
+                    </button>
+                </div>
+            </div>
+
+            <!-- Device Preview -->
+            <div id="devicePreview" class="device-preview" style="display: none;">
+                <div class="preview-container">
+                    <div class="device-mockup">
+                        <div class="mockup-frame">
+                            <iframe id="websiteFrame" src="" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Navigation Menu Overlay -->
+    <div id="navOverlay" class="nav-overlay">
+        <div class="nav-menu-content">
+            <div class="nav-menu-header">
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <span class="logo-text">
+                        <span class="logo-main">Ui</span>
+                        <span class="logo-sub">LOOKER</span>
+                    </span>
+                </div>
+                <button id="closeNavMenu" class="close-nav">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+            
+            <nav class="nav-menu-items">
+                <a href="index.html" class="nav-menu-item">
+                    <i class="bi bi-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="nav-menu-item">
+                    <i class="bi bi-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="help.html" class="nav-menu-item">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Help</span>
+                </a>
+                <div class="nav-menu-divider"></div>
+                <div class="nav-menu-section">
+                    <h4>Quick Actions</h4>
+                    <button class="nav-menu-item" id="screenshotBtn">
+                        <i class="bi bi-camera"></i>
+                        <span>Take Screenshot</span>
+                    </button>
+                    <button class="nav-menu-item" id="refreshBtn">
+                        <i class="bi bi-arrow-clockwise"></i>
+                        <span>Refresh Page</span>
+                    </button>
+                    <button class="nav-menu-item" id="fullscreenBtn">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                        <span>Fullscreen</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Action Button -->
+    <div class="action-button">
+        <button id="getFullAccessBtn" class="full-access-btn">
+            Ask Ai
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/viewer.js"></script>
+</body>
+</html>

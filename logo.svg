@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" rx="40" fill="#1a1a1a"/>
+  
+  <!-- Phone Icon -->
+  <rect x="70" y="50" width="60" height="100" rx="8" fill="none" stroke="#ffffff" stroke-width="4"/>
+  <rect x="75" y="60" width="50" height="70" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+  <circle cx="100" cy="140" r="4" fill="#ffffff"/>
+  
+  <!-- Text -->
+  <text x="100" y="175" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#ffffff" text-anchor="middle">Ui</text>
+  <text x="100" y="192" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">LOOKER</text>
+</svg>
