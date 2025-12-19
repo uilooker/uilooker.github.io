@@ -6,6 +6,10 @@ A lightweight, browser-based responsive design testing tool to preview any websi
 
 https://uilooker.github.io/
 
+## Screenshot
+
+![UiLooker Preview](/logo-social.svg)
+
 ## Overview
 
 UiLooker helps developers and designers quickly verify how a website behaves on different screen resolutions without installing heavy tools or browser extensions.
